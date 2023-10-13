@@ -1,6 +1,6 @@
 # pynoobs
 introduction to python for beginners 
-<img src="/logo.png" alt="alt text" width="200" height="200">
+<img src="/logo.png" alt="alt text" width="500" height="500">
 
 # how to clone me onto your own machine
 1. above this message you'll see 'go to file', 'add file', and 'code'
