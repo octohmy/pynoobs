@@ -1,5 +1,6 @@
 # pynoobs
 introduction to python
+![alt text](/logo.png)
 
 # how to clone me onto your own machine
 1. above this message you'll see 'go to file', 'add file', and 'code'
@@ -10,3 +11,4 @@ introduction to python
 6. type 'git clone' and paste the URL you copied in step 2, then press enter
 
 eg. git clone https://github.com/octohmy/pynoobs.git 
+

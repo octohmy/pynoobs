@@ -118,5 +118,56 @@ current_year = 2023 # this is the current year, we can change this to any year w
 
 # Now, let's print out a welcome message that includes their name, graduation year, and how many years they have left
 
+# something like this: "Welcome to the UoB, user_name!! Welcome to the class of user_grad_year. You will have the best years_left year(s) of your life here!!"
+
+# Type your code below:
+
+
+
+
+#HINT:
 # print(f"Welcome to the UoB, {user_name}!! Welcome to the class of {user_grad_year}. You will have the best {years_left} year(s) of your life here!!")
 
+
+
+
+# Let's move onto functions
+
+# Functions are a way to group code together, so we can use it again and again
+# It's like a  recipe, we can use it again and again to make the same thing
+
+# Let's make a function that prints out a welcome message
+
+# functions start with def, and then the name of the function, and then (), and then :
+
+# def welcome_message():
+    # user_name = input("Please tell me your name: ")
+    # current_year = 2023
+    # user_grad_year = input("When will you graduate?： ")
+    # years_left = int(user_grad_year) - current_year
+    # print(f"Welcome to the UoB, {user_name}!! Welcome to the class of {user_grad_year}. You will have the best {years_left} year(s) of your life here!!")
+
+# Now, let's call the function
+# welcome_message()
+
+# Now, you try, make a function that asks the user for their name, and then prints out a welcome message. But, this time we are going to use parameters
+
+# Parameters are like variables, but they are only used inside the function
+
+# def welcome_message(user_name, user_grad_year):
+    # current_year = 2023
+    # years_left = int(user_grad_year) - current_year
+    # print(f"Welcome to the UoB, {user_name}!! Welcome to the class of {user_grad_year}. You will have the best {years_left} year(s) of your life here!!")
+
+# Now, when you call it you need to give it the parameters
+
+# welcome_message("Michael", "2028")
+
+# Notice how the first parameter is the user_name, and the second parameter is the user_grad_year. It can be called anything as long as you use it correctly
+
+# For example:
+
+# def sayHi(panda, cat):
+    # print(f"Hi {panda}! Welcome to {cat}!")
+
+# sayHi("Michael", "UoB")
