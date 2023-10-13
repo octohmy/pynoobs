@@ -1,6 +1,6 @@
 # pynoobs
-introduction to python
-![alt text](/logo.png)
+introduction to python for beginners 
+<img src="/logo.png" alt="alt text" width="200" height="200">
 
 # how to clone me onto your own machine
 1. above this message you'll see 'go to file', 'add file', and 'code'
