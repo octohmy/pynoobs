@@ -22,5 +22,5 @@ Now that you have git installed and you've forked this repo, you can clone it on
 5. open a new terminal
 6. type 'git clone' and paste the URL you copied in step 2, then press enter
 
-eg. git clone https://github.com/octohmy/pynoobs.git 
+eg. git clone https://github.com........git  [enter]
 
