@@ -12,7 +12,7 @@ near the top right of this page you'll see 'fork'. click 'fork', and you'll have
 
 Now that you have git installed and you've forked this repo, you can clone it onto your machine, and make changes locally as well as uploading them via your IDE. 
 
-to clone your forked version of this repo onto your machine, follow these steps: 
+# to clone your forked version of this repo onto your machine, follow these steps: 
 
 
 1. above this message you'll see 'go to file', 'add file', and 'code'
