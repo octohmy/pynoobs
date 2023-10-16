@@ -4,11 +4,10 @@ introduction to python for beginners \
 
 # how to clone me onto your own machine
 
-firstly, you'll need to install git on your machine.
+please install git in your machine. then you can download and upload to github via your IDE (VS code, pycharm etc.)
+(https://git-scm.com/downloads)
 
-search git in your browser, and download the version for your operating system. 
-
-near the top right of this page you'll see 'fork'. click 'fork', and you'll have your own copy of this repo. 
+near the top right of this page you'll see 'fork'. click 'fork', and you'll have your own copy of this repo saved to your github account 
 
 Now that you have git installed and you've forked this repo, you can clone it onto your machine, and make changes locally as well as uploading them via your IDE. 
 
@@ -22,5 +21,4 @@ Now that you have git installed and you've forked this repo, you can clone it on
 5. open a new terminal
 6. type 'git clone' and paste the URL you copied in step 2, then press enter
 
-eg. git clone https: // github.com........git  [enter]
 
