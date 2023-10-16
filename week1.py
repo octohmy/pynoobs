@@ -112,8 +112,6 @@ current_year = 2023 # this is the current year, we can change this to any year w
 
 # years_left = \\Type your code here\\ # don't forget to un-comment this line
 
-#HINT:
-    # years_left = int(???) - ??? # what goes in the ???, think about what we just talked about
 
 
 # Now, let's print out a welcome message that includes their name, graduation year, and how many years they have left
