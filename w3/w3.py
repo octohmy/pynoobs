@@ -1,3 +1,9 @@
+# While loops are used to repeat a block of code until a condition is met
+# For loops are used to repeat a block of code for a certain number of times
+
+# Usually you'd use a while loop when you don't know how many times you want to repeat the code, and a for loop when you do know how many times you want to repeat the code
+
+
 '''
 
 While Loops:
@@ -23,14 +29,47 @@ Add conditionals to check for the following:
 '''
 For Loops:
 
-Activity: Write a program that prints out a list of things a lazy cat does in a day. For example, "Sleeping", "Eating", "Looking out the window", etc.
+Write a program that prints out a list of things a lazy cat does in a day. For example, "Sleeping", "Eating", "Looking out the window", etc.
 
-Funny Twist: After the loop, add a print statement saying, "And then, the cat realized it forgot to be lazy and did a backflip!"
+HINT:
+- create a list of strings, e.g. ["Sleeping", "Eating", "Looking out the window", etc.]
+- use a for loop to go through the list and print each item, "The lazy cat is now {item}."
+
+BONUS:
+- add a print statement at the beginning saying "The lazy cat is now awake!"
+- add a print statement at the end saying "The lazy cat is now going to sleep!"
 
 '''
 
 '''
-For loops with lists
+
+Parrot Repeater:
+Let's create a parrot that repeats everything we say! 
+We'll give it a phrase to repeat, and a number of times to repeat it.
+
+Ask the user for a phrase, or allow our function to take a phrase as an argument.
+Ask the user for a number of times to repeat the phrase, or allow our function to take a number as an argument.
+
+Use a for loop to repeat the phrase the number of times specified.
+
+CLUE:
+- use the range() function to create a range of numbers to loop through
+
+
+
+'''
+import time
+
+def parrot_repeater(phrase = "I love rock'n'roll", num = 3):
+    for i in range(num):
+        print(phrase)
+        time.sleep(2) # sleep for 2 seconds, which means wait for 2 seconds before running the next line of code
+
+parrot_repeater()
+
+
+'''
+More advanced for-loops:
 The Joke Generator
 
 Create a list of funny jokes and their punchlines. Use a loop to go through the list and print each joke, followed by its punchline.
