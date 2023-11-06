@@ -3,6 +3,25 @@
 
 # Usually you'd use a while loop when you don't know how many times you want to repeat the code, and a for loop when you do know how many times you want to repeat the code
 
+# x = list(range(5))
+
+# print(x)
+
+# for i in range(5):
+#     print(i)    
+    
+# let's explain what for loops are
+# for loops are used to iterate over a sequence (list, tuple, string) or other iterable objects
+
+# iterable means that you can "iterate" over the object duh
+
+# iterable objects means that you can return one of its elements at a time
+# for example, a list is iterable because you can get its elements one at a time
+# or a string is iterable because you can get its characters one at a time
+# or a dictionary is iterable because you can get its keys one at a time
+
+# cannot iterate over an integer 
+
 
 '''
 
@@ -60,6 +79,7 @@ CLUE:
 '''
 import time
 
+# notice the default values for the parameters
 def parrot_repeater(phrase = "I love rock'n'roll", num = 3):
     for i in range(num):
         print(phrase)
@@ -88,7 +108,7 @@ import time
 
 # sleep() method
 print("Sleeping for 2 seconds...")
-time.sleep(1)
+time.sleep(1) # .sleep() tells python to chill for however many seconds before proceeding
 print("1 second has passed...")
 time.sleep(1)
 print("Done sleeping!")
@@ -98,6 +118,8 @@ local_time = time.localtime()
 # print(f"Local time: {local_time}")
 
 # strftime() method
+# string format time
+
 #  %Y is year, %m is month, %d is day, %H is hour, %M is minute, %S is second, %I is hour (12 hour clock), %p is AM/PM
 
 formatted_time = time.strftime("%Y-%m-%d %H:%M:%S", local_time)
@@ -126,3 +148,47 @@ def countdown_timer(minutes = 1, seconds = 0):
 countdown_timer(0, 10)
 # countdown_timer()
 
+# menu function, with a list of options and a prompt
+# text file with be given e.g. Ann Smith, 55, 45, 61\n Bob Jones, 44, 51\n
+
+# split student data into a list
+# find min and max of the numbers
+# find the average of the numbers
+# extract surname from name
+# write updated averages to file, add the avg, min, max, to the end of their line
+# option to exit
+
+def split_data():
+    f = open('students.txt', "r")
+    contents = f.read()
+    split_by_line = contents.split("\n") # split method splits a string into a list, using the argument as the separator
+
+    split_by_comma = []
+    for item in split_by_line:
+        split_by_comma.append(item.split(",")) # split each item in the list by comma, and append to a new list
+
+    # use trim e.g. " Ann Smith, 55, 45, 61\n" becomes "Ann Smith, 55, 45, 61"
+    stripped_list = []
+    for item in split_by_line:
+        stripped_list.append(item.strip())
+
+def tweet_cleaning(words):
+    elements_to_remove = {"@", "#", "RT", "https://"} # set of elements to remove
+    cleaned_words = [] # empty list to store cleaned words
+    # valid = True # boolean to check if word is valid
+    for word in words:
+        if elements_to_remove in words[word]:
+            cleaned_word = words[word].remove(elements_to_remove)
+            cleaned_words.append(cleaned_word)
+        else:
+            cleaned_words.append(word)
+        
+
+'''def main2():
+    words_to_clean = 
+
+def load_from_file():
+    # load recipes and logs from a text file
+    try:
+        with open ('recipes.txt', 'r') as f:
+            lines = f.readlines()'''
