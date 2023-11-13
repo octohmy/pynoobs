@@ -6,17 +6,17 @@
 # x = list(range(5))
 
 # print(x)
-students = ["Usama", "Bob", "Cathy", "Dave", "Eve"]
+# students = ["Usama", "Bob", "Cathy", "Dave", "Eve"]
 
-print(students[3])
+# print(students[3])
 
-for i in range(5):
-    print(i)
+# for i in range(5):
+#     print(i)
     
-# students[0]
+# # students[0]
 
-for student in students:
-    print(student)   
+# for student in students:
+#     print(student)   
 
 
 # let's explain what for loops are
