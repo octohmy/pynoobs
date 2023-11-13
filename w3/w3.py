@@ -6,10 +6,19 @@
 # x = list(range(5))
 
 # print(x)
+students = ["Usama", "Bob", "Cathy", "Dave", "Eve"]
 
-# for i in range(5):
-#     print(i)    
+print(students[3])
+
+for i in range(5):
+    print(i)
     
+# students[0]
+
+for student in students:
+    print(student)   
+
+
 # let's explain what for loops are
 # for loops are used to iterate over a sequence (list, tuple, string) or other iterable objects
 
@@ -43,7 +52,16 @@ Add conditionals to check for the following:
 - if the user has had 10 slices, ask them if they want another slice. If they say "yes", tell them "I think you've had enough pizza for now", and exit the loop.
 
 '''
-
+hungry = True
+# num_of_slices = 0
+# while hungry == True:
+#     print("Do you want another slice of pizza?")
+#     if input().lower() == "yes":
+#         print("You got another slice!")
+#         num_of_slices += 1
+#         if num_of_slices > 3:
+#             hungry = False
+#             print ("No more pizza for you!")
 
 '''
 For Loops:
@@ -59,6 +77,16 @@ BONUS:
 - add a print statement at the end saying "The lazy cat is now going to sleep!"
 
 '''
+
+cat_activities = ["Sleeping", "Eating", "Looking out the window", "Scratching the couch", "Meowing", "Licking itself", "Chasing a fly", "Chasing its tail", "Playing with a ball of yarn", "Sleeping again"]
+
+import time
+cat_activities[0] = "Awake"
+
+for activity in cat_activities:
+    print(f"The lazy cat is now {activity}.")
+    time.sleep(2)
+    
 
 '''
 
@@ -83,9 +111,9 @@ import time
 def parrot_repeater(phrase = "I love rock'n'roll", num = 3):
     for i in range(num):
         print(phrase)
-        time.sleep(2) # sleep for 2 seconds, which means wait for 2 seconds before running the next line of code
+        time.sleep(1) # sleep for 2 seconds, which means wait for 2 seconds before running the next line of code
 
-parrot_repeater()
+# parrot_repeater("i'm so hungry", 5)
 
 
 '''
@@ -126,8 +154,8 @@ formatted_time = time.strftime("%Y-%m-%d %H:%M:%S", local_time)
 formatted_12hr_time = time.strftime("%I:%M %p", local_time)
 
 # print formatted time using strftime() method and f strings
-# print(f"Formatted time: {formatted_time}")
-# print(f"Formatted 12 hour time: {formatted_12hr_time}")
+print(f"Formatted time: {formatted_time}")
+print(f"Formatted 12 hour time: {formatted_12hr_time}")
 
 
 # make a timer function that counts down from x minutes and x seconds, printing out the time left every second
@@ -145,7 +173,7 @@ def countdown_timer(minutes = 1, seconds = 0):
     # when the loop is done, print "Time's up!"
     print ("Time's upppp!")
 
-countdown_timer(0, 10)
+countdown_timer(0,5)
 # countdown_timer()
 
 # menu function, with a list of options and a prompt
