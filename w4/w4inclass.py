@@ -1,3 +1,5 @@
+hello = "hello world"
+
 # lowercase everything 
 print(hello.lower())
 
