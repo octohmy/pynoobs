@@ -55,20 +55,24 @@ def find_needle_in_haystack(haystack):
     print (final_string) 
     # Found the needle at position 7 and position 9 and position 11
     
-    print(f"Now with colours!!:\n{bold}{underline}{cyan}{final_string}{reset}")
+    # print(f"Now with colours!!:\n{bold}{cyan}{final_string}{reset}")
     
     # randomise the colour of the text
     import random
     random_colour = random.choice([yellow, red, green, blue, magenta, cyan, white])
-    print(f"Now randomised:\n{bold}{underline}{random_colour}{final_string}{reset}")
+    # computer_choice = random.choice(['rock', 'paper', 'scissors'])
+    # print(f"Now randomised:\n{bold}{underline}{random_colour}{final_string}{reset}")
     
     # randomise each character of the text
     randomised_final_string = ""
     for char in final_string:
         random_colour = random.choice([yellow, red, green, blue, magenta, cyan, white])
         randomised_final_string += random_colour + char
-        
-    print(f"Now randomised by character:\n{bold}{randomised_final_string}{reset}")
+    
+    random_bold = random.choice([bold, ""])
+    random_underline = random.choice([underline, ""])
+    
+    print(f"Now randomised by character:\n{random_underline}{random_bold}{randomised_final_string}{reset}")
     
     return final_string
 

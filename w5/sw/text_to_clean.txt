@@ -1,1 +1,3 @@
 acob &Wilson, Lily!@ Thompson, Sarah-Ann ^Jones, Ethan Harr!son%$, Olivia Mar+tinez, Tyler [Grif]fin, Isabella Gutie^rrez, Aiden O'Con!nor, Emily St@ewart, Noah Pat+(rick
+
+.split(', ')

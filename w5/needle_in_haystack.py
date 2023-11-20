@@ -1,6 +1,6 @@
 from art import *
-aprint("butterfly")
-tprint("pyNOOBS", font="alligator", chr_ignore=True)
+# aprint("butterfly")
+# tprint("pyNOOBS", font="alligator", chr_ignore=True)
 
 
 
@@ -11,15 +11,17 @@ haystack = [1, 2, 3, "a", "b", "c", "junk", "needle","more junk",
 def find_needle_in_haystack(haystack):
     
     index_of_needles = []
+    print(index_of_needles)
 
     # add the index values of where the needles are
     for i in range(len(haystack)):
         if haystack[i] == "needle":
             index_of_needles.append(i)
 
+    print(index_of_needles)
     # prepare final message to use in print statement
     final_string = "Found the needle at position "
-
+    print(final_string)
     '''
     - first, check if there are any needles to avoid an error
 
@@ -44,4 +46,4 @@ def find_needle_in_haystack(haystack):
     print (final_string)
     return final_string
 
-# find_needle_in_haystack(haystack)
+find_needle_in_haystack(haystack)
