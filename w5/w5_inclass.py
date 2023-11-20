@@ -54,12 +54,12 @@ class Human:
     
 human = Human()
 
-human.speak()
+# human.speak()
 
 human.name = "Daniel"
-print(human.name)
+# print(human.name)
 
-human.speak()
+# human.speak()
 
 # let's step this up a gear with a constructor
 # a constructor is a function that is called when the object is created
@@ -72,6 +72,9 @@ human.speak()
     
 # let's make a class called 'Car' with the __init__ function
 
+
+# INIT
+
 class Car:
     def __init__ (self, colour, make, model, year):
         self.colour = colour
@@ -81,11 +84,11 @@ class Car:
         
     def drive(self):
         print("Vroom vroom, I'm in me mum's car")
-        print(f"Vroom vroom, I'm in me mum's {self.colour} {self.make}")
+        # print(f"Vroom vroom, I'm in me mum's {self.colour} {self.make}")
         
     def honk_horn(self):
         print("beep beep")
-        print(f"beep beep, I'm a {self.make}, get out me way")
+        # print(f"beep beep, I'm a {self.make}, get out me way")
         
 
 # let's make a car object
@@ -95,10 +98,43 @@ lambo_car = Car("red", "Lamborghini", "Aventador", 2019)
 ferrari_car = Car("yellow", "Ferrari", "F40", 1992)
 
 # let's print the attributes of the car
-print(f"All the attributes of the lambo are:\n{lambo_car.__dict__}")
-print(f"The colour of the lambo is {lambo_car.colour}")
-print(f"The make of the lambo is {lambo_car.make}")
+# print(f"All the attributes of the lambo are:\n{lambo_car.__dict__}")
+# print(f"The colour of the lambo is {lambo_car.colour}")
+# print(f"The make of the lambo is {lambo_car.make}")
 
 # i want to honk the horn of the lambo and drive it
-lambo_car.honk_horn()
-lambo_car.drive()
+# lambo_car.honk_horn()
+# lambo_car.drive()
+
+
+# let's make a class called 'Person' with the __init__ function
+class Person:
+    def __init__ (self, name, age, height, weight):
+        self.name = name
+        self.age = age
+        self.height = height
+        self.weight = weight
+        
+    def bmi(self):
+        bmi = self.weight / (self.height ** 2)
+        return bmi
+
+    def bmi_category(self):
+        bmi = self.bmi()
+        if bmi < 18.5:
+            return "underweight"
+        elif bmi < 25:
+            return "normal"
+        elif bmi < 30:
+            return "overweight"
+        else:
+            return "obese"
+        
+    def speak(self):
+        print(f"Hello, my name is {self.name}, I am {self.age} years old, my BMI is {self.bmi():.2f}, and I am {self.bmi_category()}")
+
+# let's make a person object
+# we have to pass in the values for the attributes
+
+michael_person = Person("Michael", 21, 1.86, 104) 
+michael_person.speak()

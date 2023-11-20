@@ -1,3 +1,9 @@
+from art import *
+aprint("butterfly")
+tprint("pyNOOBS", font="alligator", chr_ignore=True)
+
+
+
 haystack = [1, 2, 3, "a", "b", "c", "junk", "needle","more junk",
             "needle", "random junk", "needle", 3, 4, 5, 6]
 
@@ -38,4 +44,4 @@ def find_needle_in_haystack(haystack):
     print (final_string)
     return final_string
 
-find_needle_in_haystack(haystack)
+# find_needle_in_haystack(haystack)
