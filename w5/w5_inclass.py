@@ -53,8 +53,9 @@ class Human:
         # by using self.name we can use the name variable within the class
     
 human = Human()
+human.speak()
 
-# human.speak()
+
 
 human.name = "Daniel"
 # print(human.name)
@@ -83,12 +84,12 @@ class Car:
         self.year = year
         
     def drive(self):
-        print("Vroom vroom, I'm in me mum's car")
-        # print(f"Vroom vroom, I'm in me mum's {self.colour} {self.make}")
+        # print("Vroom vroom, I'm in me mum's car")
+        print(f"Vroom vroom, I'm in me mum's {self.colour} {self.make}")
         
     def honk_horn(self):
-        print("beep beep")
-        # print(f"beep beep, I'm a {self.make}, get out me way")
+        # print("beep beep")
+        print(f"beep beep, I'm a {self.make}, get out me way")
         
 
 # let's make a car object
@@ -131,10 +132,13 @@ class Person:
             return "obese"
         
     def speak(self):
-        print(f"Hello, my name is {self.name}, I am {self.age} years old, my BMI is {self.bmi():.2f}, and I am {self.bmi_category()}")
+        print(f"Hello, my name is {self.name}, I am {self.age} years old, my BMI is {self.bmi():.1f}, and I am {self.bmi_category()}")
 
 # let's make a person object
 # we have to pass in the values for the attributes
 
-michael_person = Person("Michael", 21, 1.86, 104) 
-michael_person.speak()
+michael_person = Person("Michael", 31, 1.86, 75) 
+# michael_person.speak()
+
+tom_person = Person("Tom", 31, 1.76, 68)
+tom_person.speak()

@@ -22,7 +22,7 @@ def beers_on_the_wall(num_of_beers = 99):
         
         print(lyrics)
         
-        time.sleep(2)
+        time.sleep(1)
         
     lyrics = "no more bottles of beer. go to the store, buy some more, 99 bottles of beer on the wall"
     

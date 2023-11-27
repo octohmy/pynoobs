@@ -1,6 +1,6 @@
 from art import *
 # aprint("butterfly")
-# tprint("pyNOOBS", font="alligator", chr_ignore=True)
+tprint("pyNOOBS", font="alligator", chr_ignore=True)
 
 
 
