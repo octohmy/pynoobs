@@ -16,8 +16,8 @@ def print_board(square_board):
     :param square_board:
     print the board as instructed
     """
-    print("| {:2d}| {:2d} |".format(square_board[0], square_board[1]))
-    print("| {:2d}| {:2d} |".format(square_board[2], square_board[3]))
+    print(f"| {square_board[0]:2d}| {square_board[1]:2d} |")
+    print(f"| {square_board[2]:2d}| {square_board[3]:2d} |")
 
     #    2x2 grid | 0| 0 |
 
