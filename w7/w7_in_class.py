@@ -6,30 +6,30 @@
 # and then printing the list in reverse alphabetical order
 
 
-my_string = "It's CHRISTMAS!!! 🎄🎅🎄🎅🎄🎅🎄🎅\nThis is a string of words. The SW1 exam is frightfully close. This string contains three sentences."
+# my_string = "It's CHRISTMAS!!! 🎄🎅🎄🎅🎄🎅🎄🎅\nThis is a string of words. The SW1 exam is frightfully close. This string contains three sentences."
 
-# print(f"Original string:\n{my_string}\n")
-# .strip() removes leading and trailing whitespace
-#  ^ it's the same as strip(" ")
-split_by_spaces_one = my_string.strip()
-split_by_spaces_two = my_string.split('')
+# # print(f"Original string:\n{my_string}\n")
+# # .strip() removes leading and trailing whitespace
+# #  ^ it's the same as strip(" ")
+# split_by_spaces_one = my_string.strip()
+# split_by_spaces_two = my_string.split('')
 
-# split by full stop
-split_by_full_stop = my_string.split(".")
-# print(f"Split by full stop:\n{split_by_full_stop}\n")
+# # split by full stop
+# split_by_full_stop = my_string.split(".")
+# # print(f"Split by full stop:\n{split_by_full_stop}\n")
 
-# to split by character first we need to get each word
-split_by_word = my_string.split()
-# print(f"Split by word:\n{split_by_word}\n")
+# # to split by character first we need to get each word
+# split_by_word = my_string.split()
+# # print(f"Split by word:\n{split_by_word}\n")
 
-no_spaces_string = "HereIsAStringWithNoSpaces"
-# print(f"String with no spaces:\n{no_spaces_string}\n")
+# no_spaces_string = "HereIsAStringWithNoSpaces"
+# # print(f"String with no spaces:\n{no_spaces_string}\n")
 
-# split by character
-split_by_char = list(no_spaces_string)
-# print(f"Split by character:\n{split_by_char}\n")
+# # split by character
+# split_by_char = list(no_spaces_string)
+# # print(f"Split by character:\n{split_by_char}\n")
 
-split_by_char_list = []
+# split_by_char_list = []
 
 # the first iteration of the loop
 # no_spaces_string[0] = "H"

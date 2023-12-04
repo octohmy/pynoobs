@@ -3,6 +3,7 @@ import random
 """
 def generate_square_board():
     square_board = [0, 0, 0, 0]
+    # vic_list[[0,0][0,0]]
     
 
     """
@@ -10,6 +11,8 @@ def generate_square_board():
     insert code here to generate a square board of 2 X 2 with zeros
     """
     return square_board
+
+
 
 def print_board(square_board):
     """
@@ -32,10 +35,8 @@ def generate_numbers(square_board):
     def random_num_1_20():
         return random.randint(1, 20)
     
-    square_board[0] = random_num_1_20()
-    square_board[1] = random_num_1_20()
-    square_board[2] = random_num_1_20()
-    square_board[3] = random_num_1_20()
+    for num in range(len(square_board)):
+        square_board[num] = random_num_1_20()
     
     return square_board
 
