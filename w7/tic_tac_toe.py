@@ -116,8 +116,12 @@ def play_tic_tac_toe():
         # winning message to display
         message = f"There is a win!\nPlayer {player} won!"
         
+        horizontal_win = False
+        vertical_win = False
+        diagonal_win = False
         # horizontal win
-        horizontal_win = (grid[0] == grid[1] == grid [2] == "X") or (grid[0] == grid[1] == grid [2] == "O") or (grid[3] == grid[4] == grid[5] == "X") or (grid[3] == grid[4] == grid[5] == "O") or (grid [6] == grid[7] == grid[8] == "X") or (grid [6] == grid[7] == grid[8] == "O")
+        
+        # horizontal_win = (grid[0] == grid[1] == grid [2] == "X") or (grid[0] == grid[1] == grid [2] == "O") or (grid[3] == grid[4] == grid[5] == "X") or (grid[3] == grid[4] == grid[5] == "O") or (grid [6] == grid[7] == grid[8] == "X") or (grid [6] == grid[7] == grid[8] == "O")
         
         # variable to track winning line
         winning_line = None
@@ -142,7 +146,7 @@ def play_tic_tac_toe():
         # print(f"Horizontal win: {horizontal_win}")
         
         # vertical win
-        vertical_win = (grid[0] == grid[3] == grid [6] == "X") or (grid[0] == grid[3] == grid [6] == "O") or (grid[1] == grid[4] == grid[7] == "X") or (grid[1] == grid[4] == grid[7] == "O") or (grid [2] == grid[5] == grid[8] == "X") or (grid [2] == grid[5] == grid[8] == "O") 
+        # vertical_win = (grid[0] == grid[3] == grid [6] == "X") or (grid[0] == grid[3] == grid [6] == "O") or (grid[1] == grid[4] == grid[7] == "X") or (grid[1] == grid[4] == grid[7] == "O") or (grid [2] == grid[5] == grid[8] == "X") or (grid [2] == grid[5] == grid[8] == "O") 
         
         # vertical win
         if grid[0] == grid[3] == grid[6] != "-":
@@ -160,7 +164,7 @@ def play_tic_tac_toe():
 
         # print(f"Vertical win: {vertical_win}")
         
-        diagonal_win = (grid[0] == grid[4] == grid [8] == "X") or (grid[0] == grid[4] == grid [8] == "O") or (grid[2] == grid[4] == grid[6] == "X") or (grid[2] == grid[4] == grid[6] == "O")
+        # diagonal_win = (grid[0] == grid[4] == grid [8] == "X") or (grid[0] == grid[4] == grid [8] == "O") or (grid[2] == grid[4] == grid[6] == "X") or (grid[2] == grid[4] == grid[6] == "O")
         
         # diagonal win
         if grid[0] == grid[4] == grid[8] != "-":

@@ -5,17 +5,14 @@
 # and then printing the list in alphabetical order
 # and then printing the list in reverse alphabetical order
 
-# create a string
-from os import read
 
-
-my_string = "This is a string of words. The SW1 exam is frightfully close. This string contains three sentences"
+my_string = "It's CHRISTMAS!!! 🎄🎅🎄🎅🎄🎅🎄🎅\nThis is a string of words. The SW1 exam is frightfully close. This string contains three sentences."
 
 # print(f"Original string:\n{my_string}\n")
 # .strip() removes leading and trailing whitespace
 #  ^ it's the same as strip(" ")
 split_by_spaces_one = my_string.strip()
-split_by_spaces_two = my_string.split()
+split_by_spaces_two = my_string.split('')
 
 # split by full stop
 split_by_full_stop = my_string.split(".")
@@ -48,6 +45,12 @@ split_by_char_list = []
 # using split to break up a list of names
 # f = open("./names_to_clean.txt", "r")
 # r = f.read()
+
+# with open("./names_to_clean.txt", "r") as f:
+#     r = f.read()
+#     names = r.split(", ")
+#     print(f"List of names:\n{names}")
+    
 
 # names are separated by a comma and a space
 # split by comma and space
