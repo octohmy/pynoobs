@@ -48,7 +48,9 @@ def calculate_win(square_board):
     message = "No win"
     """
     sum_of_all = square_board[0] + square_board[1] + square_board[2] + square_board[3]
+    
     print(f"Sum: {sum_of_all}")
+    
     if sum_of_all % 10 == 0:
         message = "There is a win"
     else:
