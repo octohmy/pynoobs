@@ -1,7 +1,7 @@
 import random
 import time
 import os
-from turtle import clear
+
 
 def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -204,8 +204,13 @@ def play_tic_tac_toe():
         num_of_turns += 1
         
         print(f"\n{underline}{bold}Scoreboard:{reset}\nPlayer X: {player_x_score}\nPlayer O: {player_y_score}\n")
-
-        time.sleep(1)
+        
+        # random time to make moves more human-like
+        time_choices = [0.5, 0.75, 1.0, 1.25, 1.5, 1.75]
+        random_time = random.choice(time_choices)
+        
+        time.sleep(random_time)
+        
         if active_game is True:
             clear_terminal()
 
